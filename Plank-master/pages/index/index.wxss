@@ -1,0 +1,113 @@
+/**index.wxss**/
+Page{
+  background:#fff;
+}
+/*时间显示样式*/
+.timeStyle{
+  display: flex;
+  flex-direction: row;
+  height: 800rpx;
+  align-items: center;
+  position: relative;
+
+}
+.time{
+  position: absolute;
+  padding-left:84rpx;
+  color:#f7bd10;
+}
+.svgClock1{
+  position: absolute;
+  padding-left: 20rpx;
+}
+/*按钮样式*/
+.btnAll{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-top: 200rpx;
+ 
+}
+
+.btnVideo,.btnRecord{
+  position: relative;
+  width: 96rpx;
+  height:96rpx;
+  border-radius: 100%;
+
+}
+/*.imageVideo{
+  position: absolute;
+  left: 26rpx;
+  top: 26rpx;
+}
+.imageRecord{
+  position: absolute;
+  left: 24rpx;
+  top: 24rpx;
+}*/
+.show_button{
+  transform: translateY(0);
+  transition: 0.3s
+}
+.hide_button{
+  transform: translateY(240rpx);
+  transition: 0.3s
+}
+.videoStyle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600rpx;
+}
+.videoPic{
+  width: 100%;
+}
+.videoTitle{
+  padding-left: 20rpx;
+  font-size:36rpx;
+}
+
+.show_video{
+  transform: translateY(0);
+  transition: 0.4s;
+  transform-style: ease;
+}
+.hide_video{
+  transform: translateY(-600rpx);
+  transition: 0.4s;
+  transform-style: ease;
+}
+.show_title{
+   opacity: 1;
+   transition: 0.3s;
+   transition-delay: 0.3s;
+   transform-style: ease;
+}
+.hide_title{  
+   opacity: 0;
+   transition: 0.3s;
+   transform-style: ease;
+}
+.moveDown{
+  transform: translateY(0);
+  transition: 0.3s
+}
+.moveUp{
+  transform: translateY(400rpx);
+  transition: 0.3s
+}
+.show_time{
+   opacity: 1;
+   transition: 0.3s;
+   transform-style: ease;
+}
+
+.hide_time{
+   opacity: 0;
+   transition: 0.3s;
+   transform-style: ease;
+}

@@ -1,0 +1,32 @@
+/* pages/video/video.wxss */
+.cld{
+  width: 100%;
+  padding-top: 30rpx;
+  font-weight: bold;
+  
+}
+.header{
+  color:#f7bd10;
+}
+.board{
+  color: #ccc;
+  font-weight: 10;
+}
+.counts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  height: 80rpx;
+  padding:0 30rpx;
+  background: rgba(255,170,1,0.3)
+}
+.counts>view{
+  font-size: 14px;
+  color: #f7bd10;
+}
+.countsDate{
+  color: #f75151;
+  font-weight:bold;
+}

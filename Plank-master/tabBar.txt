@@ -1,0 +1,25 @@
+"tabBar":{
+    "backgroundColor":"#fff",
+    "color":"#ccc",
+    "selectedColor":"#1296db",
+    "borderStyle":"rbga(0,0,0,0.2)",
+    "list":[
+      {
+      "pagePath":"pages/index/index",
+      "text":"Ê×Ò³",
+      "iconPath":"images/icon_home_default.png",
+      "selectedIconPath":"images/icon_home.png"
+      
+  },{
+       "pagePath":"pages/course/course",
+       "text":"¿Î³Ì",
+       "iconPath": "images/icon_course_default.png",
+       "selectedIconPath": "images/icon_course.png"
+  },{
+       "pagePath":"pages/record/record",
+       "text":"¼ÇÂ¼",
+       "iconPath": "images/icon_record_default.png",
+       "selectedIconPath": "images/icon_record.png"
+  }
+  ]
+    }

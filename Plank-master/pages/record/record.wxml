@@ -1,0 +1,22 @@
+<!--pages/video/video.wxml-->
+<view class='container'>
+<scroll-view scroll-y="true">
+<calendar class="cld" header-style="header" board-style="board" show-more-days="{{true}}"
+lunar="{{false}}" cell-size="30" days-color="{{day_style}}"
+next="{{true}}" prev="{{true}}" 
+/>
+<view class='counts' id='counts'>
+<view><text>累计时长: </text>
+<text class='countsDate'>{{countTimes}}</text>
+</view>
+<view><text>累计天数: <text class='countsDate'>{{countDays}} </text> 天</text>
+</view>
+</view>
+<view class='recordList'>
+<view wx:fot="{{recordList}}">
+ <view></view>
+</view>
+
+</view>
+</scroll-view>
+</view>

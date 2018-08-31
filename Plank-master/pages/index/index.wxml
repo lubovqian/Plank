@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container ">
+<!--时间样式-->
+  <view class="timeStyle {{moveTime?'moveDown':'moveUp'}}">
+    <view class='time' style="font-size:100rpx;">{{times}}</view>
+    <image class="svgClock1 {{showTime?'show_time':'hide_time'}}" src="../../image/clock_in.png" mode="aspectFill" style='width:530rpx;height:528rpx'></image>
+    <image class="svgClock2 {{showTime?'show_time':'hide_time'}}" src="../../image/clock_out.png" mode="aspectFill" style='width:568rpx;height:596rpx'></image>
+  </view>
+  <!--按钮样式-->
+  <view class="btnAll">
+     <image class='imageVideo' src='../../image/video.png' style='width:54rpx;height:54rpx;' bindtap='btnVideoClick'>
+     </image> 
+    <view class='start' id="btn" bindtap="changeBg">
+      <image class="startimage " mode="aspectFill" src="{{isStart?'../../image/end.png':'../../image/start.png' }}" style='width:136rpx;height:136rpx;'>
+      </image>
+    </view>  
+    <image class='imageRecord' src='../../image/record.png' style='width:60rpx;height:60rpx;'
+    bindtap='btnRecordClick'></image>
+  </view>
+    <!--视频-->
+  <view class="videoStyle {{showVideo?'show_video':'hide_video'}}">
+   <image class="videoPic " src='../../image/videopic.png'></image>
+   <text class="videoTitle {{showTitle?'show_title':'hide_title'}} ">日本催眠广告：嗜睡的你</text>
+  </view>
+</view>

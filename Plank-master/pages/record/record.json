@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+      "calendar": "plugin://calendar/calendar"
+},
+ 
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+
+}
