@@ -12,7 +12,34 @@ Page({
     str: MONTHS[new Date().getMonth()],  // 月份字符串
     day_style:[],
     countTimes:"01:00:12",
-    countDays:"12"
+    countDays:"12",
+    recordList:[
+      {
+        times:'00:03:20',
+        dates:'2018-02-12 10:20:10'
+       
+      },
+      {
+        times: '00:01:20',
+        dates: '2018-02-11 16:20:10'
+      },
+      {
+        times: '00:02:20',
+        dates: '2018-02-10 10:50:10'
+      },
+      {
+        times: '00:00:40',
+        dates: '2018-02-09 11:15:10'
+      },
+      {
+        times: '00:00:20',
+        dates: '2018-02-08 21:15:40'
+      },
+      {
+        times: '00:00:20',
+        dates: '2018-02-07 19:46:15' 
+      }
+    ]
   
   },
 

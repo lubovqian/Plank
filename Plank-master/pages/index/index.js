@@ -2,24 +2,24 @@
 //获取应用实例
 Page({
   data: {
-    isStart:false,
+    isStart: false,
     times: "00:00:00",
-    showBtn:true,
-    showVideo:false,
-    showTitle:false,
-    showTime:true,
-    moveTime:true,
+    showBtn: true,
+    showVideo: false,
+    showTitle: false,
+    showTime: true,
+    moveTime: true,
     num: 0,
-    flag:0,
+    flag: 0,
     time: null,
     h: 0,
     m: 0,
     s: 0
   },
-  onLoad: function () {
+  onLoad: function() {
 
   },
-  changeBg: function () {
+  changeBg: function() {
     var that = this
     var h = this.data.h
     var m = this.data.m
@@ -34,9 +34,10 @@ Page({
       clearInterval(this.data.time)
     } else {
       this.setData({
-        isStart:true,
-        times:"00:00:00"
+        isStart: true,
+        times: "00:00:00"
       })
+
       function timer() {
         s++;
         var ss = s < 10 ? ("0" + s) : s;
@@ -59,16 +60,15 @@ Page({
       console.log(result)
     }
   },
-btnRecordClick:function(){
-   wx.navigateTo({
-     url: '/pages/record/record',
-   })
-},
-  btnVideoClick:function(){
-    var that=this;
-    var flag = that.data.flag;
-    var result = flag/ 2;
-    if (flag% 2 == 0) {
+  btnRecordClick: function() {
+    wx.navigateTo({
+      url: '/pages/record/record',
+    })
+  },
+  btnVideoClick: function() {
+    var that = this;
+    var showVideo = this.data.showVideo;
+    if (!showVideo) {
       that.setData({
         showVideo: true,
         showTitle: true,
@@ -76,14 +76,12 @@ btnRecordClick:function(){
         moveTime: false
       })
     } else {
-    that.setData({
-      showVideo:false,
-      showTitle:false,
-      showTime: true,
-      moveTime: true
-    })
-  }
-    console.log(flag)
-    console.log(result)
+      that.setData({
+        showVideo: false,
+        showTitle: false,
+        showTime: true,
+        moveTime: true
+      })
+    }
   }
 })

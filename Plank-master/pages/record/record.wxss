@@ -19,7 +19,7 @@
   justify-content: space-between;
   margin-top: 20rpx;
   height: 80rpx;
-  padding:0 30rpx;
+  padding: 0 30rpx;
   background: rgba(255,170,1,0.3)
 }
 .counts>view{
@@ -29,4 +29,12 @@
 .countsDate{
   color: #f75151;
   font-weight:bold;
+}
+.items{
+display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #f7f7f7;
 }

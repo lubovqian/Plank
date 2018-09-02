@@ -28,6 +28,8 @@ Page{
   align-items: center;
   width: 100%;
   padding-top: 200rpx;
+  position: absolute;
+  bottom: 40rpx;
  
 }
 
@@ -94,11 +96,15 @@ Page{
 }
 .moveDown{
   transform: translateY(0);
-  transition: 0.3s
+  transition: 0.3s;
+  transform-style: ease;
+  
 }
 .moveUp{
   transform: translateY(400rpx);
-  transition: 0.3s
+  transition: 0.3s;
+  transform-style: ease;
+  
 }
 .show_time{
    opacity: 1;

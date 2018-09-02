@@ -20,6 +20,6 @@
     <!--视频-->
   <view class="videoStyle {{showVideo?'show_video':'hide_video'}}">
    <image class="videoPic " src='../../image/videopic.png'></image>
-   <text class="videoTitle {{showTitle?'show_title':'hide_title'}} ">日本催眠广告：嗜睡的你</text>
+   <!--<text class="videoTitle {{showTitle?'show_title':'hide_title'}} ">日本催眠广告：嗜睡的你</text>-->
   </view>
 </view>
